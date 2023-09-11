@@ -1,7 +1,0 @@
-echo "# Cool-Bikes-Software-Assurance-CYBR8420-850" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/loganstranglen/Cool-Bikes-Software-Assurance-CYBR8420-850.git
-git push -u origin main
