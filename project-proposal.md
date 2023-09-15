@@ -19,7 +19,7 @@
 ## Introduction
 **GitHub Repository:** https://github.com/loganstranglen/Cool-Bikes-Software-Assurance-CYBR8420-850
 
-**Open-source Software Project:** Linux Foundation Public Health
+**Open-source Software Project:** Cardea
 
 
 ## Operational Environment
