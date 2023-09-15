@@ -1,5 +1,5 @@
-# Cool-Bikes-Software-Assurance-CYBR8420-850
-Repository containing information &amp; artifacts pertaining to the 'cool bikes' team semester project.
+# Cool Bikes Software Assurance
+Repository containing information &amp; artifacts pertaining to the 'Cool Bikes' team semester project.
 
 This repository is devoted to the group project for CYBR 8410 Software Assurance at the University of Nebraska Omaha. 
 
