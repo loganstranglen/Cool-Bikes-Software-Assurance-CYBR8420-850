@@ -70,12 +70,19 @@ Comprehensive documentation is available regarding LFPH projects, making it easy
 
 ## Licensing
 #### Licenses
-LFPH’s repository contains data received from Crunchbase. This data is not licensed pursuant to Apache license. However, it is subject to Crunchbase data Access Term. Everything else is under Apache License.
+- Cardea's license is under the Apache license (version 2.0) their github license's file may not be used except in compliance with the License. which can be found at:
+
+       http://www.apache.org/licenses/LICENSE-2.0 
+
 
 #### Contribution Procedure
+-As cardea's is a Linux Foundation Public Health (LFPH) open sources projects it falls into the same procedure which is stated below:
+
 LFPH has a number of tools to enable contribution and collaboration among its community such as slack and mailing list. It hosts a slack organization which can be joined through its github and webpage. It also maintains a number of mailing lists for its community members. The mailing lists are managed by the Linux Foundation staff and LFPH community leadership.
 
 #### Contributor Agreements
+-Just like for the contribution procedure the contribution agreements is also under LFPH agreements:
+
 LFPH pledges to respect all people who contribute through reporting issues, posing feature requests, submitting pull requests and other activities. And is committed to making participation in the project harassment-free experience for everyone regardless of their level of experience or ethnicity.
 
 
