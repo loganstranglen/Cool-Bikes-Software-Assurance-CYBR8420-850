@@ -24,7 +24,7 @@
 
 ## Operational Environment
 #### Systems Engineering View Diagram 
-![](https://user-images.githubusercontent.com/60804887/267173835-bd6bcc1e-e8b7-442c-b28a-95473dda097d.png)
+![](https://user-images.githubusercontent.com/60804887/268181152-70e9333b-6ff1-4fd3-8006-bb3912daed8a.png)
 
 #### Threats Perceived by User of the Software
 This project pertains to healthcare and due to that, there is needed secure storage of sensitive information from threats both internal and external. Information in a healthcare environment often might have to have security measures and compliance protocols to meet various government and organization standards, the most known being HIPAA. 
@@ -59,7 +59,7 @@ LFPH is used in a multitude of ways.  Including, COVID-19 Exposure and contact t
 LFPH’s projects have been adopted on a global scale, their projects are popular due to their proven effectiveness in addressing public health challenges.
 
 #### Languages
-PHP, CSS, SCSS, Shell, JavaScript, Hack, and HTML
+Javascript, Objective-C, Shell, Java, Ruby, and Starlark
 
 #### Platform
 LFPH projects are designed to be platform-agnostic, allowing them to be utilized on various operating systems and devices.
