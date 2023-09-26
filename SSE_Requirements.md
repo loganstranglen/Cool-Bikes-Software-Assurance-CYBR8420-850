@@ -1,3 +1,10 @@
+## Part 1
+
+Patient-Doctor Communication Diagram
+
+![](https://user-images.githubusercontent.com/87502871/270497268-f5dc94ae-bd10-4844-a740-6b8143e4e07f.jpg)
+
+
 ## Part 2
 
 Cardea does not publicly document its installation issues, but it does have security configurations that can be adjusted after cloning it from GitHub. The Cardea GitHub has three controller repositories: ![Health Issuer Controller](https://github.com/hyperledger-labs/cardea-health-issuer-controller), ![Primary Verifier Controller](https://github.com/hyperledger-labs/cardea-primary-verifier-controller), and ![Secondary Verifier Controller](https://github.com/hyperledger-labs/cardea-secondary-verifier-controller). All of these controllers have editable fields in their .env file that pertain to security. For all three, the JWT_SECRET and SESSION_SECRET fields hold 32 alpha-numeric digits that serves as the cryptographic private key used to encrypt credentials sent to the Hyperledger Indy Network. 
