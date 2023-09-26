@@ -7,8 +7,7 @@ Patient-Doctor Communication Diagram
 
 Traveler-Test Result Diagram
 
-![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/76424137/ff74d980-c757-493d-a806-35fe08042e7c)
-
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/76424137/f4fd982e-fe03-40cf-9803-6bf76f2d3ca0)
 
 
 
