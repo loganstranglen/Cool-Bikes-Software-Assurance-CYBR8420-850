@@ -1,6 +1,6 @@
 ## Part 1
 
-Five use cases of Cardea by Hyperledger Labs in association with Linux Foundation Public Health
+### Five use cases of Cardea by Hyperledger Labs in association with Linux Foundation Public Health
 
 Patient-Doctor Communication Diagram by Logan
 
