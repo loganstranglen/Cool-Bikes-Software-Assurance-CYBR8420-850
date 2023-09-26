@@ -1,15 +1,17 @@
 ## Part 1
 
-Patient-Doctor Communication Diagram
+Five use cases of Cardea by Hyperledger Labs in association with Linux Foundation Public Health
+
+Patient-Doctor Communication Diagram by Logan
 
 ![](https://user-images.githubusercontent.com/87502871/270497268-f5dc94ae-bd10-4844-a740-6b8143e4e07f.jpg)
 
 
-Traveler-Test Result Diagram
+Traveler-Test Result Diagram by Daniel
 
 ![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/76424137/f4fd982e-fe03-40cf-9803-6bf76f2d3ca0)
 
-Traveler Presents Diagram to Verifier
+Traveler-Verifier Diagram by Ryan
 
 ![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/60804887/d50d146a-08ee-4aae-8bc5-af381e2ad2ca)
 
