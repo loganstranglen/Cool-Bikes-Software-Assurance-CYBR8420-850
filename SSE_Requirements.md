@@ -9,6 +9,9 @@ Traveler-Test Result Diagram
 
 ![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/76424137/f4fd982e-fe03-40cf-9803-6bf76f2d3ca0)
 
+Traveler Presents Diagram to Verifier
+
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/60804887/d50d146a-08ee-4aae-8bc5-af381e2ad2ca)
 
 
 ## Part 2
