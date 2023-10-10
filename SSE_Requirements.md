@@ -21,6 +21,12 @@ Traveler-Verifier Diagram by Ryan
 
 ![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/60804887/d50d146a-08ee-4aae-8bc5-af381e2ad2ca)
 
+
+Cardea Mobile Agent Use and Misuse Case by Perry
+
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/144743159/0c1358a1-09f2-4228-b623-42d5b749305b)
+
+
 ### Cardea's Security Alignments
 Upon making the misuse cases, several security issues were discovered. For one, the health credential issuer cryptographically sends a credential to the traveler which may contain PII, leading to a risk of reverse-engineering and uncovering the sensitive information within a QR code. Reverse-engineering cryptography is difficult but still presents a misuse case. Second, the weakest link of verifying a credential is a rogue verifier. If a rogue verifier somehow gains access to a traveler's QR credential without their consent, then that could result in unlawful disclosure of medical information. Third, blockchain software such as Cardea has airtight code security, however, is still susceptible to man-in-the-middle attacks. Simply capturing and deciphering web packets can compromise sensitive information. Cardea rightly advertises strong security. And the misuse cases presented in this file are unlikely to happen. However, understanding the misuse and vulnerabilities in any software is the first step to making it more secure. 
 
