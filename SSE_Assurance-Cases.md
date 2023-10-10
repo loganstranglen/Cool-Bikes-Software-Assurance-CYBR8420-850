@@ -13,6 +13,9 @@ Issuer Assurance Case
 Mobile Agent Vulnerability Assurance Case
 ![](https://github.com/hydra1114/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCasePerry.png?raw=true)
 
+Secure Data Transmission Assurance Case
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/loganstranglenAssuranceDiagram1.jpg?raw=true)
+
 ## Part 2
 
 ### Alignment of Evidence
@@ -25,6 +28,17 @@ In the Issuer Assurance Case, there are four pieces of evidence to supply. E1 re
 
 In the Mobile Agent Vulnerability Assurance case, there are six pieces of evidence to assure the top claim is true. The first, Apple and Google software 
 security documentation, is difficult to track down. Apple has [security overview documentation](https://support.apple.com/guide/security/app-security-overview-sec35dd877d0/web), but lacks technical documentation. Google seems to rely on [Google Play Protect](https://developers.google.com/android/play-protect) to monitor for malicious apps and also lacks technical documentation. The second evidence is NIST documentation on secure configuration, which can be found [here](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-128.pdf). The third evidence consists of documentation on secure hashing is found in the Federal Information Processing Standards (FIPS), [here](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf) and [here](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.202.pdf). The fourth piece of evidence is GitHub's documentation on their access control as a secure sytem, which can be found in their [Get Started](https://docs.github.com/en/get-started/learning-about-github/access-permissions-on-github) documentation. The fifth piece of evidence is documentation on access of the application domain to the user's phone number to be able to implement multi-factor authentication. The only place we've found this mentioned explicitly without verifying through source code analysis is [this YouTube video](https://www.youtube.com/watch?v=ruhnyMTqNog&list=LL&index=37&t=2337s) on Cardea's credentials implementation. The final piece of evidence is a code review report. While this report does not currently exist to determine if this feature is possible, a [quick perusal of source code](https://github.com/hyperledger-labs/cardea-mobile-agent/blob/main/components/Settings/index.js) shows there is space for this feature to be implemented.
+
+In the Secure Data Transmission Assurance Case above, presented are four pieces of evidence to back the claims made. The first evidence bubble states that all health records are protected by the Health Insurance Portability and Accountability Act of 1996 (HIPPA). Under this litigation, specifically 16 CFR 318.1, health care professionals are held accountable regarding the safekeeping of health records and if a breach of security (meaning unauthorized acquisition and access) were to occur, there would be repercussions E1: [HIPPA 16 CFR 318.1](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-318) 
+The second evidence presented is that CVS, Walgreens, Rite Aid all retain health records for 10 years and can be provided to customer. This is another way to confirm results and health records if for some reason there would be suspicion of incorrect information committed to Cardea.
+[Walgreens](https://www.walgreens.com/topic/pharmacy/healthcare-clinic/patient-resources-and-forms.jsp#:~:text=An%20electronic%20medical%20record%20is,medical%20records%20are%20being%20requested)
+[Rite Aid](https://www.riteaid.com/legal/request-records#:~:text=You%20can%20request%20copies%20of,through%20a%20Chrome%20web%20browser)
+[CVS](https://care.cvs.com/care-navigation/#/home)
+The third evidence assures that even if web traffic were to be modified or a forged certificate leveraged, basic Antivirus such as Norton or McAfee would notify the user and quarantine suspicious downloads (certificate).
+[Norton](https://support.norton.com/sp/en/us/home/current/solutions/v80629965)
+[McAfee](https://www.mcafee.com/support/?articleId=TS102131&page=shell&shell=article-view )
+The fourth and final evidence confirms Cardea's safe handling of health records so it abides by HIPPA’s 45 C.F.R. § 164.524 (a)(1), which states that information, when handled correctly, will be securely and readily available for an individual at their request.
+https://www.law.cornell.edu/cfr/text/45/164.524 
 
 ### Reflection
 
