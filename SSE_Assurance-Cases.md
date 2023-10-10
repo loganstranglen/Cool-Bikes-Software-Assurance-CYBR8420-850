@@ -5,10 +5,10 @@ Vendor-Verifier Assurance Case
 ![](https://github.com/hydra1114/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/Vendor%20Verifier%20Assurance%20Case%20Revised%202.jpg?raw=true)
 
 Traveler-Consent Assurance Case
-![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCaseRyan.png?raw=true)
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCaseRyan2.png?raw=true)
 
 Issuer Assurance Case
-![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/Issuer%20Assurance%20Case-Daniel.drawio.png?raw=true)
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/Vendor%20Verifier%20Assurance%20Case%20Revised%202.jpg?raw=true)
 
 Mobile Agent Vulnerability Assurance Case
 ![](https://github.com/hydra1114/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCasePerry.png?raw=true)
@@ -41,5 +41,16 @@ The fourth and final evidence confirms Cardea's safe handling of health records 
 E4: [HIPPA 45 C.F.R. § 164.524 (a)(1)](https://www.law.cornell.edu/cfr/text/45/164.524) 
 
 ### Reflection
+
+The following links are parts of the project board related to this assignment:
+https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/issues/35
+https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/issues/37
+https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/issues/38
+https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/issues/39
+https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/issues/41
+https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/issues/42
+https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/issues/49
+
+Our team did well on delivering this assignment with better coordination, organization, and timeliness than the last assignment. We met often to figure out the assignment and divide the work. There were issues with finding meeting times that worked with everyone. But most everyone was able to attend most meetings and work together. Each diagram has been run through two or three members before being finalized. We resolved our meeting time issues to just assign three meetings a week (Mondays, Thursdays, and Saturdays at 6:30pm) and just attend as many meetings as possible with regards to our personal schedule. We also had issues with finding information, since Cardea has much of its documentation in the form of videos rather than written documents. We resolved that by seeking out the videos covering Cardea. Looking forward, we will execute the next deliverable in a more swift and decisive manner. 
 
 
