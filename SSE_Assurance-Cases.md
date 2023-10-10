@@ -8,7 +8,7 @@ Traveler-Consent Assurance Case
 ![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCaseRyan2.png?raw=true)
 
 Issuer Assurance Case
-![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/Vendor%20Verifier%20Assurance%20Case%20Revised%202.jpg?raw=true)
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/Issuer%20Assurance%20Case%20Daniel.png?raw=true)
 
 Mobile Agent Vulnerability Assurance Case
 ![](https://github.com/hydra1114/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCasePerry.png?raw=true)
