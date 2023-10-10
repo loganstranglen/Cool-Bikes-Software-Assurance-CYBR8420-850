@@ -5,7 +5,7 @@ Vendor-Verifier Assurance Case
 ![](https://github.com/hydra1114/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/Vendor%20Verifier%20Assurance%20Case%20Revised%202.jpg?raw=true)
 
 Traveler-Consent Assurance Case
-![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCaseRyan.png?raw=true)
+![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/AssuranceCaseRyan2.png?raw=true)
 
 Issuer Assurance Case
 ![](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/Assurance-Diagrams/Vendor%20Verifier%20Assurance%20Case%20Revised%202.jpg?raw=true)
