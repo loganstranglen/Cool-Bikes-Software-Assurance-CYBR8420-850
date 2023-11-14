@@ -3,22 +3,21 @@
 ### Data Flow Diagrams for Critical Data-flows of Cardea by Hyperledger Labs
 
 **Cardea Mobile Agent:**
+[Threat Modeling Report](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/DFD-Diagrams/CardeaMobileAgent%20DFD.pdf)
 
 ![DFD](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/144743159/4e1d6209-c1c4-4e77-bc76-62316cb4bbe3)
 
-
 **Health Provider – User:**
+[Threat Modeling Report](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/DFD-Diagrams/HealthProvider-User%20DFD.pdf)
 
 ![DFD](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/144743159/fafebff1-f221-4b32-a228-79eac931fc92)
 
-[Health Provider – User Threat Modeling Report](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/DFD-Diagrams/HealthProvider-User%20DFD.pdf)
-
 
 **Traveler – Verifier DFD:**
+[Threat Modeling Report](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/DFD-Diagrams/Traveler-Verifier%20DFD.pdf)
 
 ![DFD](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/144743159/517942ec-a81b-439a-8c7a-cabdc538fff5)
 
-[Traveler – User Threat Modeling Report](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/DFD-Diagrams/Traveler-Verifier%20DFD.pdf)
 
 ## Part 2: Observations
 
