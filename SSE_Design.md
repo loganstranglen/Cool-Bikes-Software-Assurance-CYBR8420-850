@@ -2,6 +2,19 @@
 
 ### Data Flow Diagrams for Critical Data-flows of Cardea by Hyperledger Labs
 
+**Health Provider – User:**
+
+![DFD](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/144743159/fafebff1-f221-4b32-a228-79eac931fc92)
+
+[Health Provider – User Threat Modeling Report](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/DFD-Diagrams/HealthProvider-User%20DFD.pdf)
+
+
+**Traveler – Verifier DFD:**
+
+![DFD](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/assets/144743159/517942ec-a81b-439a-8c7a-cabdc538fff5)
+
+[Traveler – User Threat Modeling Report](https://github.com/pdonahue28/Cool-Bikes-Software-Assurance-CYBR8420-850/blob/main/DFD-Diagrams/Traveler-Verifier%20DFD.pdf)
+
 ## Part 2: Observations
 
 ### Cardea Design-related issues from DFD-based Threat Analysis
