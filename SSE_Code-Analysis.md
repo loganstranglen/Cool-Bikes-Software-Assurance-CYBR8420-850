@@ -1,12 +1,12 @@
 
-Cardea Mobile Agent (Ryan):
+##Cardea Mobile Agent (Ryan):
 CWE-20 Bad Input Validation
     components/Registration/ContactInfo/index.js lines 123,180
     utils/schemas.js line 5
 CWE-922 Insecure Storage of Sensitive Information
     android/app/src/main/AndroidManifest.xml line 8
 
-Cardea Primary Verifier Controller (Perry):
+##Cardea Primary Verifier Controller (Perry):
 CWE-327 Use of a Broken or Risky Cryptographic Algorithm
     util.js line 57
 CWE-200 Exposure of Sensitive Information to an Unauthorized Actor / CWE-319 Cleartext Transmission of Sensitive Information
