@@ -1,4 +1,4 @@
-#### Part 1 - Code Review
+#### Part 1 - Code Review:
 
 The group executed automated code review over the Cardea Mobile Agent, Cardea Primary Verifier Controller, Cardea Mobile Secondary Verifier Agent, Cardea Secondary Verifier Controller, Cardea Health Issuer Controller, and the Cardea Health Issuer UI portions of the code. Whilst doing so, they were able to identify a handful of Mtire Common Weakness Enumerations (CWE) within the open sources Github repository. 
 
@@ -16,7 +16,7 @@ For the automated code review portion of the analysis, the pair chose the tool S
 For their manual review, the two were able to discover argument errors in the code which the automated tool was also able to discover at line 42 of the src/UI/CanUser.js and line 52 of the src/UI/Contact.js. Both instances are only errors in the code, rather than security issues, and were also anticipated.
 
 
-#### Part 2
+#### Part 2:
 
 
 ### Cardea Mobile Agent (Ryan):
