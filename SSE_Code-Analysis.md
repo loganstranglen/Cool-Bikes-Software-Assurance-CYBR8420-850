@@ -1,4 +1,4 @@
-#### Part 1 - Code Review:
+## Part 1 - Code Review:
 
 The group executed automated code review over the Cardea Mobile Agent, Cardea Primary Verifier Controller, Cardea Mobile Secondary Verifier Agent, Cardea Secondary Verifier Controller, Cardea Health Issuer Controller, and the Cardea Health Issuer UI portions of the code. Whilst doing so, they were able to identify a handful of Mtire Common Weakness Enumerations (CWE) within the open sources Github repository. 
 
@@ -8,15 +8,15 @@ During their code review, they anticipated encountering several challenges. The 
 
 (insert Cole manual/automated review documentation (See logan/danial example below)
 
-Daniel & Logan Code Review:
-Regarding the manual code review of Cardea, neither Daniel or Logan have a strong familiarity with JavaScript. So, they opted to fork both of the repositories that were undergoing analysis to their own GitHub accounts. From there, they then employed the native tools GitHub offers to solve errors and issues within written code and went through the folders of both repos’. By doing this, they hoped to find security flaws and syntax errors that would require action to resolve. 
+### Daniel & Logan Code Review:
+Regarding the manual code review of Cardea, neither Daniel nor Logan have a strong familiarity with JavaScript. So, they opted to fork both of the repositories that were undergoing analysis to their own GitHub accounts. From there, they then employed the native tools GitHub offers to solve errors and issues within written code and went through the folders of both repos’. By doing this, they hoped to find security flaws and syntax errors that would require action to resolve. 
 
 For the automated code review portion of the analysis, the pair chose the tool SonarCloud (SonarCloud Online Code Review as a Service Tool | Sonar) to handle the task of reviewing the repositories that aligned with their initial assurance and misuse cases. After watching a demo of how the tool functioned and deeming it suitable for the task, they decided to implement it themselves and have it analyze the code. By using this tool, they expected to see outcomes such as security vulnerabilities, bugs, and security hotspots that would need attention. 
 
 For their manual review, the two were able to discover argument errors in the code which the automated tool was also able to discover at line 42 of the src/UI/CanUser.js and line 52 of the src/UI/Contact.js. Both instances are only errors in the code, rather than security issues, and were also anticipated.
 
 
-#### Part 2:
+## Part 2:
 
 
 ### Cardea Mobile Agent (Ryan):
@@ -38,7 +38,7 @@ For their manual review, the two were able to discover argument errors in the co
 
 ### Cardea Mobile Secondary Verifier Agent (Cole)
 
-The first CWE associated with the Cardea Mobile Secondary Verifier Agent is CWE-250, Execution with Unnecessary Privileges, in [line 5 of the AndroidManifest.xml](https://sonarcloud.io/project/security_hotspots?id=hydra1114_cardea-mobile-secondary-verifier-agent&file=android%2Fapp%2Fsrc%2Fmain%2FAndroidManifest.xml&fileUuid=AYwTawN1GsAc-SEPvuSg&tab=code) file. This is specifically about the repository's requirements of permissions to access the camera. The verifier app does not use the camera as part of its verification process and so the access is unnecessary and may be taken advantage of. This could be a considered a low-level risk as it is a privacy concern, but doesn't give direct access to personal information or higher permissions. We were not originally looking into unexpected permissions as a security risk in our scenarios, so in this case the automated tool helped identify issues we hadn't thought of.
+The first CWE associated with the Cardea Mobile Secondary Verifier Agent is CWE-250, Execution with Unnecessary Privileges, in [line 5 of the AndroidManifest.xml](https://sonarcloud.io/project/security_hotspots?id=hydra1114_cardea-mobile-secondary-verifier-agent&file=android%2Fapp%2Fsrc%2Fmain%2FAndroidManifest.xml&fileUuid=AYwTawN1GsAc-SEPvuSg&tab=code) file. This is specifically about the repository's requirements of permissions to access the camera. The verifier app does not use the camera as part of its verification process so the access is unnecessary and may be taken advantage of. This could be considered a low-level risk as it is a privacy concern, but doesn't give direct access to personal information or higher permissions. We were not originally looking into unexpected permissions as a security risk in our scenarios, so in this case the automated tool helped identify issues we hadn't thought of.
 
 The second CWE detected was CWE-1333, Inefficient Regular Expression Complexity, in [line 159 of components/Registration/BusinessInfo/index.js](https://sonarcloud.io/project/security_hotspots?id=hydra1114_cardea-mobile-secondary-verifier-agent&file=components%2FRegistration%2FBusinessInfo%2Findex.js&fileUuid=AYwTawN1GsAc-SEPvuRq). This CWE would result in a Denial of Servce attack if taken advantage of. However, the context of this flaw is validating the user's phone number. Because of this, the only user being denied service would be the user typing in the phone number, so no security related risk is relavent. Potential inefficiencies leading to DoS attacks is something that we hadn't thought of when evaluating risks in our usage scenarios.
 
@@ -50,3 +50,9 @@ There was only one potential security flaw detected in the Secondary Verifier Co
 
 ### Cardea Health Issuer Controller (Logan & Daniel)
 
+Upon employing the automated code review tool SonarCloud, the pair discovered the results they were looking for. Starting with the Cardea Health Issuer Controller, the initial CWE they identified through SonarCloud was CWE 327: Use of a broken or risky cryptographic algorithm. 
+Found within the "util.js" file at the [57th line](https://sonarcloud.io/project/issues?resolved=false&types=VULNERABILITY&id=loganstranglen_cardea-health-issuer-controller&open=AYwTqSo2s7XGyIfbgB6x) of code, this CWE poses a high-security impact on the software. This is attributed to the code employing one of the most vulnerable modes of Advanced Encryption Standard (AES), namely, Cipher Block Chaining (CBC), during encryption. This mode lacks authentication mechanisms, exposing the software to potential threats, such as the unauthorized access and theft of sensitive data, including a patient's personal information. 
+To address this vulnerability, the automated tool recommended a more robust mode like Galois/Counter Mode (GCM). GCM combines encryption with authentication and integrity checks using a cryptographic hash function, ensuring data confidentiality and mitigating potential security risks.
+
+The Cardea Health Issuer Controller is also linked to CWE-319, which pertains to the Cleartext Transmission of Sensitive Information. The vulnerability lies in the code's utilization of an insecure protocol embedded in the invitation URL, pinpointed on [line 17](https://sonarcloud.io/project/security_hotspots?id=loganstranglen_cardea-health-issuer-controller ) of the connections.test.js file. The flagged issue arises from the use of HTTP instead of HTTPS in this particular line. This choice poses a risk of sensitive data interception, encompassing information like the patient's alias, status, or even the Decentralized Identifier (DID).
+To address this concern, the automated tool recommended adopting a secure protocol, namely HTTPS, as a mitigation measure against potential security breaches.
