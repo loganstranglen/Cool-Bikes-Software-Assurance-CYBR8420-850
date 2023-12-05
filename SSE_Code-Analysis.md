@@ -31,13 +31,26 @@ The last weakness of Cardea Mobile Agent is CWE-306 Missing Authentication for C
 
 
 ### Cardea Primary Verifier Controller (Perry):
-* CWE-327 Use of a Broken or Risky Cryptographic Algorithm
-   * util.js line 57
-* CWE-200 Exposure of Sensitive Information to an Unauthorized Actor / CWE-319 Cleartext Transmission of Sensitive Information
-   * orm/connections.test.js lines 17,37
-   * orm/contactsCompiled.test.js line 18
-* CWE-1004 Sensitive Cookie Without 'HttpOnly' Flag
-   * /index.js line 119
+CWE-327: Use of a Broken or Risky Cryptographic Algorithm
+
+Located: util.js on line 57
+
+Description: The first common weakness enumeration identified about the Cardea Primary Verifier agent is a broken or insecure cryptographic algorithm. Insecure cryptographic algorithms act as a vulnerability for this product feature, and the vulnerability can be exposed to produce unauthorized, sensitive data to an attacker. Some common attacks used to bypass weak or broken cryptographic algorithms include brute force and man-in-the-middle. This CWE was identified during the Sonarcloud automated code review. The Cardea documentation (page 14) mentions the use of cryptography for identification and encrypting/decrypting sensitive medical communications. With the code review identifying this weakness, a more robust cryptographic algorithm must be utilized to mitigate this security concern. After discussing this security vulnerability with the team, this CWE is considered a high priority. 
+
+CWE-200: Exposure of Sensitive Information to an Unauthorized Actor / CWE-319: Cleartext Transmission of Sensitive Information
+
+Located: orm/connections.test.js lines 17,37 & orm/contactsCompiled.test.js line 18
+
+Description: The following two common weakness enumerations identified by the Sonarcloud automated code review were the exposure of sensitive information to an unauthorized subject and clear-text data transmissions. The primary reason these two security concerns were discovered in the code review was the code utilizing the HTTP web protocol to transmit and receive data via the web. As a result, this data transmission is processed in plain text and can ultimately be exploited by an attacker to expose confidential medical information. However, upon further review with the team, this CWE is contained within a .test file for testing purposes only. Hence, this CWE is considered a low priority.
+
+
+CWE-1004 Sensitive Cookie Without 'HttpOnly' Flag
+
+Located: /index.js line 119
+
+Description: The fourth CWE identified for the Cardea Primary Verifier agent during the Sonarcloud automated code review was sensitive cookies not using the HttpOnly security flag. This Cardea agent feature uses a cookie to store sensitive session information such as user activity, client-side input, and authentication purposes. Furthermore, the HttpOnly flag is used with compatible web browsers to prevent client-side scripts from accessing session cookies. Ultimately, this helps mitigate Cross-Site Scripting (XSS) attacks that can allow an attacker to steal session cookies and the sensitive data stored within it. When discussing this CWE with the team, this was deemed a medium priority.
+
+
 
 ### Cardea Mobile Secondary Verifier Agent (Cole)
 
