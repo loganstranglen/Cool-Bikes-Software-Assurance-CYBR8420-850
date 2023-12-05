@@ -1,17 +1,20 @@
 ## Part 1 - Code Review:
 
-The group executed automated code review over the Cardea Mobile Agent, Cardea Primary Verifier Controller, Cardea Mobile Secondary Verifier Agent, Cardea Secondary Verifier Controller, Cardea Health Issuer Controller, and the Cardea Health Issuer UI portions of the code. Whilst doing so, they were able to identify a handful of Mtire Common Weakness Enumerations (CWE) within the open sources Github repository. 
+Cardea is an open-sourced public health app serving as the group's system-of-interest. The group executed automated code review over repositories named Cardea Mobile Agent, Cardea Primary Verifier Controller, Cardea Mobile Secondary Verifier Agent, Cardea Secondary Verifier Controller, Cardea Health Issuer Controller, and the Cardea Health Issuer UI portions of the code. Whilst doing so, they were able to identify a handful of Mtire Common Weakness Enumerations (CWE) within the open sources Github repository. 
 
-During their code review, they anticipated encountering several challenges. The initial hurdle involved a lack of familiarity with the JavaScript programming language. The second difficulty arose from uncertainty about what specific aspects to scrutinize, given the well-maintained nature of Cardea. The final challenge they foresaw was identifying issues and dealing with uncertainty in associating them with the matching Mitre Common Weakness Enumeration.
+Several challenges were encountered during code review. The initial hurdle involved a lack of familiarity with the JavaScript programming language. To overcome this challenge, the automated code-scanning tool SonarCloud (SonarCloud Online Code Review as a Service Tool) was chosen to quickly identify vulnerabilities in Cardea. The strategy was to use the tool, find the detected vulnerabilities, and then investigate them with manual review if necessary. SonarCloud reviewed the repositories that aligned with assurance and misuse cases. The tool was chosen because 1) It convienently operates within GitHub 2) It is compatible with Javascript and 3) Its findings can be referenced with hyperlinks for this assignment. After watching a demo of how the tool functioned, they decided to implement it themselves and have it analyze the code. SonarClouds revealed security vulnerabilities, bugs, and security hotspots needing attention. Scans revealed some weaknesses that were known through previous diagrams, and some unknown. 
 
-(insert Ryan/Perry manual/automated review documentation (See logan/danial example below)
+The second difficulty arose from uncertainty about what specific aspects to scrutinize, given the well-maintained nature of Cardea. Most of scrutinization was in the shortcomings of a decentralized infrastructure, as well as poor security coding practices that have failed to be fixed over the years. 
 
-(insert Cole manual/automated review documentation (See logan/danial example below)
+The final challenge they foresaw was identifying issues and dealing with uncertainty in associating them with the matching Mitre Common Weakness Enumeration.
+
+### Ryan & Perry Code Review:
+Ryan and Perry anticipated several weakness after manual review of the code. Concerning Cardea Mobile Agent, CWE-306 was known since the misuse case. CWE-20 was also known in the misuse case, but was left out since it was believed to be too small of a vulnerability at the time. CWE-922 was known since the assurance case, where questions of how Cardea stores data revealed the lack of data integrity. CWE-778 was anticipated in the threat model, when the Microsoft Threat Modeling tool revealed the poor quality of logs on the app. 
+
+The CWE's in Primary Verifier Agent were not expected like in Cardea Mobile Agent. CWE-327 was unexpected since Cardea's documentation described its cyptography as secure. CWE-200 and CWE-319 were also unexpected. CWE-1004 was unsurprising since Cole encountered the same weakness in his assigned repository. 
 
 ### Daniel & Logan Code Review:
 Regarding the manual code review of Cardea, neither Daniel nor Logan have a strong familiarity with JavaScript. So, they opted to fork both of the repositories that were undergoing analysis to their own GitHub accounts. From there, they then employed the native tools GitHub offers to solve errors and issues within written code and went through the folders of both repos’. By doing this, they hoped to find security flaws and syntax errors that would require action to resolve. 
-
-For the automated code review portion of the analysis, the pair chose the tool SonarCloud (SonarCloud Online Code Review as a Service Tool | Sonar) to handle the task of reviewing the repositories that aligned with their initial assurance and misuse cases. After watching a demo of how the tool functioned and deeming it suitable for the task, they decided to implement it themselves and have it analyze the code. By using this tool, they expected to see outcomes such as security vulnerabilities, bugs, and security hotspots that would need attention. 
 
 For their manual review, the two were able to discover argument errors in the code which the automated tool was also able to discover at line 42 of the src/UI/CanUser.js and line 52 of the src/UI/Contact.js. Both instances are only errors in the code, rather than security issues, and were also anticipated.
 
