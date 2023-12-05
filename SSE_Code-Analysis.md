@@ -13,6 +13,13 @@ Ryan and Perry anticipated several weakness after manual review of the code. Con
 
 The CWE's in Primary Verifier Agent were not expected like in Cardea Mobile Agent. CWE-327 was unexpected since Cardea's documentation described its cyptography as secure. CWE-200 and CWE-319 were also unexpected. CWE-1004 was unsurprising since Cole encountered the same weakness in his assigned repository. 
 
+
+### Cole Code Review:
+Cole had little experience Javascript, so he chose to rely primarily on an automated tool to do code analysis and identify any potential problems. He then narrowed down the focus of what the tool found by referencing the misuse cases and assurance cases identified in previous assignments to filter out potential flaws that were less concerning for our use scenarios. He then used manual analysis to guage if the flaw was applicable and how severe it is given the scenarios we had identified. The main difficulty he foresaw was the lack of understanding of the technology (JavaScript and block chain).
+
+He forked his assigned repositories and used SonarCloud to run an automated analysis. He then examined each of the flaws that it produced and filtered them down to the relevant non-test security hotspots. He then utilized ChatGPT to match the flaw with a corresponding CWE. He then examined child CWEs and sought more specific CWEs that were a better fit. These were then examined and compared to the group's previous work.
+
+
 ### Daniel & Logan Code Review:
 Regarding the manual code review of Cardea, neither Daniel nor Logan have a strong familiarity with JavaScript. So, they opted to fork both of the repositories that were undergoing analysis to their own GitHub accounts. From there, they then employed the native tools GitHub offers to solve errors and issues within written code and went through the folders of both repos’. By doing this, they hoped to find security flaws and syntax errors that would require action to resolve. 
 
