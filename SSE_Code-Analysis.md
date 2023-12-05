@@ -6,7 +6,7 @@ Several challenges were encountered during code review. The initial hurdle invol
 
 The second difficulty arose from uncertainty about what specific aspects to scrutinize, given the well-maintained nature of Cardea. Most of scrutinization was in the shortcomings of a decentralized infrastructure, as well as poor security coding practices that have failed to be fixed over the years. 
 
-The final challenge they foresaw was identifying issues and dealing with uncertainty in associating them with the matching Mitre Common Weakness Enumeration.
+The final challenge was dividing up the Cardea code amongst members of the group. Despite Cardea Mobile Agent being the focus of Ryan and Perry, it is only one repository. Meanwhile, Cole's specialisization into the verifier code stretches across four repositories. Thus, some of the verifier code was given to Perry for review. The health issuer code was divided evenly amognst Daniel and Logan. 
 
 ### Ryan & Perry Code Review:
 Ryan and Perry anticipated several weakness after manual review of the code. Concerning Cardea Mobile Agent, CWE-306 was known since the misuse case. CWE-20 was also known in the misuse case, but was left out since it was believed to be too small of a vulnerability at the time. CWE-922 was known since the assurance case, where questions of how Cardea stores data revealed the lack of data integrity. CWE-778 was anticipated in the threat model, when the Microsoft Threat Modeling tool revealed the poor quality of logs on the app. 
@@ -14,7 +14,7 @@ Ryan and Perry anticipated several weakness after manual review of the code. Con
 The CWE's in Primary Verifier Agent were not expected like in Cardea Mobile Agent. CWE-327 was unexpected since Cardea's documentation described its cyptography as secure. CWE-200 and CWE-319 were also unexpected. CWE-1004 was unsurprising since Cole encountered the same weakness in his assigned repository. 
 
 ### Daniel & Logan Code Review:
-Regarding the manual code review of Cardea, neither Daniel nor Logan have a strong familiarity with JavaScript. So, they opted to fork both of the repositories that were undergoing analysis to their own GitHub accounts. From there, they then employed the native tools GitHub offers to solve errors and issues within written code and went through the folders of both repos’. By doing this, they hoped to find security flaws and syntax errors that would require action to resolve. 
+Regarding the manual code review of Cardea, neither Daniel nor Logan have a strong familiarity with JavaScript. So, they opted to fork both of the repositories that were undergoing analysis to their own GitHub accounts. From there, they then employed the native tools GitHub offers to solve errors and issues within written code and went through the folders of both repos’. By doing this, they hoped to find security flaws and syntax errors that would require action to resolve. SonarCloud was used in addition to the GitHub tool. 
 
 For their manual review, the two were able to discover argument errors in the code which the automated tool was also able to discover at line 42 of the src/UI/CanUser.js and line 52 of the src/UI/Contact.js. Both instances are only errors in the code, rather than security issues, and were also anticipated.
 
